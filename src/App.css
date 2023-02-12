@@ -1,0 +1,237 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.textAlignCenter {
+  text-align: center;
+}
+.textAlignJustify{
+  text-align: justify;
+}
+
+/* image::after {
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 80%;
+} */
+.header {
+  font-size: 40px;
+  margin-top: 150px;
+  color: yellow;
+  height: fit-content;
+  text-shadow: 0 0 25px white;
+}
+
+.roundedButton {
+  border-radius: 30px !important;
+  text-decoration: inherit;
+}
+.vl {
+  border-left: 3px solid brown;
+  height: 500px;
+}
+@font-face {
+  font-family: "AlQalamTajNastaleeq";
+  src: url(resources/fonts/AlQalam\ Taj\ Nastaleeq\ Regular.ttf);
+}
+
+.urduFontHeader {
+  font-family: "AlQalamTajNastaleeq";
+  font-size: 30pt;
+}
+
+.urduFontParagraph {
+  font-family: "AlQalamTajNastaleeq";
+  font-size: 20pt;
+}
+
+.panelSlider {
+  position: relative;
+  height: 100%;
+  max-height: 753px;
+  overflow: hidden;
+  width: 100%;
+}
+.dataContainer {
+  top: 0;
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.imgBgFade {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  object-position: center;
+}
+.imgContainer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.196);
+}
+
+
+.sloganPanel{
+  background-color: #2b94be;
+  min-height: 100px;
+  padding: 30px;
+  color: white;
+  /* opacity : 70%; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.welcomeStatement{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* Home Cards CSS */
+
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12), 0 8px 32px -8px hsla(0, 0%, 0%, 0.14), 0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
+}
+/* Home Cards Css Ends */
+
+
+
+
+/* Footer CSS */
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 50px 50px;
+  color: darkblue;
+  font-weight: bold;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.footer address {
+  font-style: normal;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: brown;
+  border-radius:10px;
+  color: white;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: square;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: black;
+}
+
+.nav__ul--extra {
+  column-count: 1;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  font-style: italic;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+/* Footer CSS ENDS */
