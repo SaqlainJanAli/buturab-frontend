@@ -6,18 +6,68 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+.ButurabApp {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.ButurabAppHeader {
+  position: absolute;
+  /* top: 0;  */
+  /* margin-bottom: 220px; */
+  background-color: "#F4FBFF";
+
+  width: "100%";
+  z-index: "999";
+}
+.ButurabAppBody {
+  /* margin-top: auto; */
+  background: linear-gradient(90deg, white 0%, rgba(138, 239, 255, 1) 100%);
+  min-height: 80vmin;
+  /* padding: 20; */
+  border: "1.5px solid gray";
+  margin-bottom: 50;
+  padding-top: 57px;
+}
+.ButurabAppFooter {
+  /* background: linear-gradient(90deg, white 0%, rgba(138, 239, 255, 1) 100%); */
+  background-color: #0f0f0f;
+  margin-top: 50;
+  color: white;
+}
+
+.buturab-brand-name {
+  font-family: "Arial Narrow", Arial;
+  font-style: italic;
+  font-weight: bold;
+}
+.buturab-page-name {
+  margin: 20;
+  margin-bottom: 30;
+  font-family: "Times New Roman";
+}
 .textAlignCenter {
   text-align: center;
 }
-.textAlignJustify{
+.textAlignJustify {
   text-align: justify;
 }
-
-/* image::after {
-  backdrop-filter: blur(3px);
-  background-color: rgba(0, 0, 0, 0.6);
-  opacity: 80%;
-} */
+.buturab-name-heading {
+  color: white;
+  text-align: right;
+  /* top: auto; */
+  margin: auto;
+  padding-top: 155px;
+}
+.carousal-panel {
+  background-color: "black";
+}
+.carousal-background {
+  font-size: 40px;
+  color: white;
+}
 .header {
   font-size: 40px;
   margin-top: 150px;
@@ -36,17 +86,28 @@
 }
 @font-face {
   font-family: "AlQalamTajNastaleeq";
-  src: url(resources/fonts/AlQalam\ Taj\ Nastaleeq\ Regular.ttf);
+  src: url("resources/fonts/AlQalam\ Taj\ Nastaleeq\ Regular.ttf");
 }
 
-.urduFontHeader {
+.urdu-header-center {
   font-family: "AlQalamTajNastaleeq";
   font-size: 30pt;
 }
-
-.urduFontParagraph {
+.urdu-para-center {
   font-family: "AlQalamTajNastaleeq";
   font-size: 20pt;
+}
+
+.urdu-header-right {
+  font-family: "AlQalamTajNastaleeq";
+  font-size: 30pt;
+  text-align: right;
+}
+
+.urdu-para-right {
+  font-family: "AlQalamTajNastaleeq";
+  font-size: 20pt;
+  text-align: right;
 }
 
 .panelSlider {
@@ -81,157 +142,71 @@
   background-color: rgba(0, 0, 0, 0.196);
 }
 
-
-.sloganPanel{
-  background-color: #2b94be;
+.sloganPanel {
+  background-color: #026c96;
   min-height: 100px;
-  padding: 30px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   color: white;
-  /* opacity : 70%; */
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  fill-opacity: 0.7;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.welcomeStatement{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-
+.welcomeStatement {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* Home Cards CSS */
-
-
-.card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12), 0 8px 32px -8px hsla(0, 0%, 0%, 0.14), 0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
+/* About Statement CSS */
+.aboutStatement {
+  margin: auto;
+  padding: 30px;
+  text-align: justify;
+  line-height: 2rem;
+  font-family: "open sans", Helvetica, Arial, sans-serif;
 }
-/* Home Cards Css Ends */
-
-
-
-
-/* Footer CSS */
-
-.footer {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 30px 30px 50px 50px;
-  color: darkblue;
-  font-weight: bold;
-}
-
-.footer > * {
-  flex:  1 100%;
-}
-
-.footer__addr {
-  margin-right: 1.25em;
-  margin-bottom: 2em;
-}
-
-.footer__logo {
-  font-family: 'Pacifico', cursive;
-  font-weight: 400;
-  font-size: 1.5rem;
+.aboutStatement h2 {
   text-transform: uppercase;
 }
 
-.footer__addr h2 {
-  margin-top: 1.3em;
-  font-size: 15px;
-  font-weight: 400;
+/* Home Cards CSS */
+.grid-cards {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-
-.nav__title {
-  font-weight: 400;
-  font-size: 15px;
-  font-weight: bolder;
+.cards {
+  min-height: 300px;
 }
-
-.footer address {
-  font-style: normal;
-}
-
-.footer__btn {
-  display: flex;
+.card {
   align-items: center;
-  justify-content: center;
-  height: 36px;
-  max-width: max-content;
-  background-color: brown;
-  border-radius:10px;
-  color: white;
-  line-height: 0;
-  margin: 0.6em 0;
-  font-size: 1rem;
-  padding: 0 1.3em;
+  height: 350;
+  width: 260;
+  /* background-color: #6cbabd; */
+  /* color: "white"; */
+  padding-top: 30;
+}
+.card:hover {
+  transform: scale(1.009);
+  box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12),
+    0 8px 32px -8px hsla(0, 0%, 0%, 0.14),
+    0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
+}
+/* Home Cards Css Ends */
+
+/* Footer CSS */
+
+.ButurabAppFooter > * {
+  flex: 1 100%;
 }
 
-.footer ul {
-  list-style: square;
-  padding-left: 0;
+.is-divider {
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-top: 0.66em;
+  height: 3px;
+  display: block;
+  margin: 1em 0;
+  max-width: 60px;
+  color: #f1f1f1;
+  /* margin-left: 50%; */
 }
-
-.footer li {
-  line-height: 2em;
-}
-
-.footer a {
-  text-decoration: none;
-}
-
-.footer__nav {
-  display: flex;
-	flex-flow: row wrap;
-}
-
-.footer__nav > * {
-  flex: 1 50%;
-  margin-right: 1.25em;
-}
-
-.nav__ul a {
-  color: black;
-}
-
-.nav__ul--extra {
-  column-count: 1;
-  column-gap: 1.25em;
-}
-
-.legal {
-  display: flex;
-  flex-wrap: wrap;
-  color: black;
-  font-style: italic;
-}
-  
-.legal__links {
-  display: flex;
-  align-items: center;
-}
-
-
-
-@media screen and (min-width: 24.375em) {
-  .legal .legal__links {
-    margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 40.375em) {
-  .footer__nav > * {
-    flex: 1;
-  }
-  
-  .nav__item--extra {
-    flex-grow: 2;
-  }
-  
-  .footer__addr {
-    flex: 1 0px;
-  }
-  
-  .footer__nav {
-    flex: 2 0px;
-  }
-}
-/* Footer CSS ENDS */

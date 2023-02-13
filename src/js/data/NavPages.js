@@ -34,8 +34,8 @@ let Pages = [
     isActive: "",
   },
   {
-    title: "Academy Portal",
-    link: "AcademyPortal",
+    title: "About",
+    link: "About",
     isDropDown: false,
     childItems: [],
     isActive: "",

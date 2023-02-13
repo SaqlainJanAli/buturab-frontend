@@ -3,6 +3,7 @@ import { Nav, Navbar } from "rsuite";
 
 import PagesList from "./../data/NavPages";
 import { Link } from "react-router-dom";
+import ButurabAppLogo from "./../../resources/images/ButurabLogo.png";
 
 const NavBar = () => {
   return (
@@ -12,13 +13,18 @@ const NavBar = () => {
         style={{
           background: "none",
           color: "black",
-          border: 2,
+          border: "2",
           borderColor: "black",
         }}
       >
         <Nav>
+          <Nav.Item>
+            <img src={ButurabAppLogo} alt="Logo" height={50} width={50} />
+          </Nav.Item>
           {/* <Nav.Item> */}
-          <Navbar.Brand>Buturab Online Quran Academy</Navbar.Brand>
+          <Navbar.Brand className="buturab-brand-name">
+            BUTURAB QURAN ACADEMY
+          </Navbar.Brand>
           {/* </Nav.Item> */}
 
           {PagesList.map((itemPage) =>

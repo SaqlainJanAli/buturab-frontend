@@ -12,12 +12,72 @@ import {
   ButtonToolbar,
   Row,
   FlexboxGrid,
+  Carousel,
 } from "rsuite";
-
+import TwitterIcon from "@rsuite/icons/legacy/Twitter";
+import muslimGirl from "./../../resources/images/muslimGirl.jpg";
+import bannerImage_01 from "./../../resources/images/WebsiteBannerButurab.png";
+import bannerImage_02 from "./../../resources/images/WebsiteBannerButurab_02.jpg";
 const Home = () => {
   return (
     <>
       <Container className="textAlignCenter">
+        <Panel className="carousal-panel">
+          {/* <Carousel autoplay> */}
+
+          <div>
+            <div
+              className="imgContainer"
+              style={{
+                background: "linear-gradient(90deg, red 0%, darkred 100%)",
+              }}
+            >
+              <img
+                src={muslimGirl}
+                alt="BannerImage_01"
+                className="imgBgFade"
+              />
+
+              <div className="dataContainer urdu-header-center buturab-name-heading">
+                <h1>Buturab Online Quran Academy</h1>
+                <h1>بوتراب آنلائن قرآن اکیڈمی</h1>
+              </div>
+
+              {/* <div className="imgContainer">
+                  <img
+                    src={muslimGirl}
+                    alt="BannerImage_01"
+                    className="imgBgFade"
+                  />
+                </div> */}
+            </div>
+          </div>
+          {/* </Carousel> */}
+          {/* <Panel className="panelSlider"> */}
+          {/* <div class="mask-custom">
+          <h3 class="text-white mb-0">Can you see me?</h3>
+        </div> */}
+          {/* <div className="imgContainer"> */}
+          {/* <img src={muslimGirl} alt="BannerImage_01" className="imgBgFade" /> */}
+          {/* </div> */}
+          {/* <div className="dataContainer">
+          <h1 className="header">
+            Buturab Online Quran Academy
+            <text className="urduFontHeader">بوتراب آنلائن قرآن اکیڈمی</text>
+          </h1> */}
+          {/* <Button className="roundedButton">Contact us</Button> */}
+
+          {/* <IconButton
+            icon={<TwitterIcon />}
+            color="cyan"
+            appearance="primary"
+            circle
+          /> */}
+          {/* </div> */}
+          {/* <h1 className="header">Buturab Online Quran Academy</h1> */}
+          {/* </Panel> */}
+        </Panel>
+
         <Panel className="sloganPanel">
           <Grid>
             <h3>Learn, Love & Live the Quran... Everyday!</h3>
@@ -27,14 +87,13 @@ const Home = () => {
             </p>
             <br />
             <br />
-            <p className="urduFontParagraph">
+            <p className="urdu-para-center">
               جدید دور میں قرآن سے مربوط ہونے کے لیے ٹیکنالوجی پر مبنی وسائل
               دریافت کریں۔
             </p>
           </Grid>
         </Panel>
-        <br />
-        <br />
+
         <Container className="welcomeStatement">
           <h3>Welcome to Buturab Online Quran Academy. </h3>
           <br />
@@ -47,7 +106,7 @@ const Home = () => {
           </p>
           <br />
           <br />
-          <p className="urduFontParagraph">
+          <p className="urdu-para-center">
             قرآن اکیڈمی کو وقت دینے کے لیے شکریہ۔
             <br />
             ہم واقعی آپ کے یہاں آنے کی تعریف کرتے ہیں اور امید کرتے ہیں کہ آپ ان
@@ -55,173 +114,82 @@ const Home = () => {
             مشغول ہونے میں آپ کی مدد کے لیے دستیاب کرائے ہیں۔
           </p>
         </Container>
-        <br />
-        <br />
-        <br />
-        <FlexboxGrid className="cards" justify="space-between">
-          <Row>
-            <FlexboxGrid.Item
-              colspan={12}
-              as={Col}
-              xs={16}
-              sm={16}
-              md={12}
-              lg={8}
-              className="card"
-              //style={{ gap: "1rem" }}
-            >
-              <Panel
-                bordered
-                shaded
-                style={{
-                  height: 480,
-                  width: 300,
-                  backgroundColor: "#6cbabd",
-                  color: "white",
-                }}
-                header=""
-                className="textAlignCenter"
-              >
-                <br />
-                <img
-                  src="quranIconPngColored.png"
-                  style={{ boxShadow: "0px 0px 5px white" }}
-                />
-                <br />
-                <br />
-                {/* <ButtonGroup> */}
-                <Button
-                  size="lg"
-                  style={{
-                    color: "white",
-                    background: "none",
-                    border: "1px solid white",
-                  }}
-                >
-                  Quran Reading & Recitation
-                </Button>
-                {/* </ButtonGroup> */}
-                <br />
 
-                <p className="textAlignJustify" style={{ padding: 15 }}>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-                  distinctio veritatis laudantium ipsam fuga perspiciatis, quasi
-                  aliquam magnam eveniet minima illum.
-                </p>
-              </Panel>
-            </FlexboxGrid.Item>
-            <FlexboxGrid.Item
-              colspan={12}
-              as={Col}
-              xs={16}
-              sm={16}
-              md={12}
-              lg={8}
-              className="card"
-            >
-              <Panel
-                bordered
-                shaded
-                style={{
-                  height: 480,
-                  width: 300,
-                  backgroundColor: "#6cbabd",
-                  color: "white",
-                }}
-                header=""
-                className="textAlignCenter"
+        <Grid className="grid-cards">
+          <FlexboxGrid className="cards" justify="space-between">
+            <Row>
+              <FlexboxGrid.Item
+                colspan={12}
+                as={Col}
+                xs={16}
+                sm={16}
+                md={12}
+                lg={8}
+                className="card"
               >
-                <br />
-                <img
-                  src="quranIconPngColored.png"
-                  style={{ boxShadow: "0px 0px 5px white" }}
-                />
-                <br />
-                <br />
-                {/* <ButtonGroup> */}
-                {/* <IconButton
-                  icon={<FaBook />}
-                  size="lg"
-                  // appearance="ghost"
-                  style={{
-                    color: "white",
-                    background: "none",
-                    border: "1px solid white",
-                  }}
-                ></IconButton> */}
-                <Button
-                  size="lg"
-                  style={{
-                    color: "white",
-                    background: "none",
-                    border: "1px solid white",
-                  }}
-                >
-                  Quran Tafseer
-                </Button>
-                <br />
-
-                <p className="textAlignJustify" style={{ padding: 15 }}>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-                  distinctio veritatis laudantium ipsam fuga perspiciatis, quasi
-                  aliquam magnam eveniet minima illum.
-                </p>
-                {/* </ButtonGroup> */}
-              </Panel>
-            </FlexboxGrid.Item>
-            <FlexboxGrid.Item
-              colspan={12}
-              as={Col}
-              xs={16}
-              sm={16}
-              md={12}
-              lg={8}
-              className="card"
-            >
-              <Panel
-                bordered
-                shaded
-                style={{
-                  height: 480,
-                  width: 300,
-                  backgroundColor: "#6cbabd",
-                  color: "white",
-                }}
-                header=""
-                className="textAlignCenter"
+                <Panel bordered shaded className="textAlignCenter card">
+                  <br />
+                  <img src="quranIconPngColored.png" alt="qurn icon png" />
+                  <br />
+                  <br />
+                  <h6>Quran Reading & Recitation</h6>
+                  <p className="textAlignJustify" style={{ padding: 15 }}>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Sint distinctio veritatis laudantium ipsam fuga
+                    perspiciatis, quasi aliquam magnam eveniet minima illum.
+                  </p>
+                </Panel>
+              </FlexboxGrid.Item>
+              <FlexboxGrid.Item
+                colspan={12}
+                as={Col}
+                xs={16}
+                sm={16}
+                md={12}
+                lg={8}
+                className="card"
               >
-                <br />
-                <img
-                  src="quranIconPngColored.png"
-                  style={{ boxShadow: "0px 0px 5px white" }}
-                />
-                <br />
-                <br />
-                <Button
-                  size="lg"
-                  style={{
-                    color: "white",
-                    background: "none",
-                    border: "1px solid white",
-                    textAlign: "center",
-                  }}
-                >
-                  Fiqhi Masail <br /> (Modern Prepositions)
-                </Button>
-                <br />
+                <Panel bordered shaded className="textAlignCenter card">
+                  <br />
+                  <img src="quranIconPngColored.png" alt="quran pic" />
+                  <br />
+                  <br />
+                  <h6>Quran Tafseer</h6>
 
-                <p className="textAlignJustify" style={{ padding: 15 }}>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-                  distinctio veritatis laudantium ipsam fuga perspiciatis,
-                  quasi.
-                </p>
-              </Panel>
-            </FlexboxGrid.Item>
-          </Row>
-        </FlexboxGrid>
-        <br />
-        <br />
-        <br />
+                  <p className="textAlignJustify" style={{ padding: 15 }}>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Sint distinctio veritatis laudantium ipsam fuga
+                    perspiciatis, quasi aliquam magnam eveniet minima illum.
+                  </p>
+                  {/* </ButtonGroup> */}
+                </Panel>
+              </FlexboxGrid.Item>
+              <FlexboxGrid.Item
+                colspan={12}
+                as={Col}
+                xs={16}
+                sm={16}
+                md={12}
+                lg={8}
+                className="card"
+              >
+                <Panel bordered shaded className="textAlignCenter card">
+                  <br />
+                  <img src="quranIconPngColored.png" alt="quran info" />
+                  <br />
+                  <br />
+                  <h6>Fiqhi Masail (Modern Prepositions)</h6>
+
+                  <p className="textAlignJustify" style={{ padding: 15 }}>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Sint distinctio veritatis laudantium ipsam fuga
+                    perspiciatis, quasi aliquam magnam eveniet minima illum.
+                  </p>
+                </Panel>
+              </FlexboxGrid.Item>
+            </Row>
+          </FlexboxGrid>
+        </Grid>
       </Container>
     </>
   );
