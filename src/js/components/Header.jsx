@@ -5,7 +5,7 @@ import { Panel } from "rsuite";
 const Header = () => {
   return (
     <>
-      <Panel bodyFill bordered style={{ overflow: "visible" }}>
+      <Panel bodyFill bordered style={{ overflow: "visible", height: "100px" }}>
         <NavBar />
       </Panel>
     </>

@@ -25,7 +25,7 @@ const Home = () => {
         <Panel className="carousal-panel">
           {/* <Carousel autoplay> */}
 
-          <div>
+          {/* <div>
             <div
               className="imgContainer"
               style={{
@@ -42,16 +42,8 @@ const Home = () => {
                 <h1>Buturab Online Quran Academy</h1>
                 <h1>بوتراب آنلائن قرآن اکیڈمی</h1>
               </div>
-
-              {/* <div className="imgContainer">
-                  <img
-                    src={muslimGirl}
-                    alt="BannerImage_01"
-                    className="imgBgFade"
-                  />
-                </div> */}
             </div>
-          </div>
+          </div> */}
           {/* </Carousel> */}
           {/* <Panel className="panelSlider"> */}
           {/* <div class="mask-custom">

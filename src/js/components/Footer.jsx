@@ -48,7 +48,7 @@ const Footer = () => {
             <br />
             <FontAwesomeIcon icon={faPhone} /> +92 312 34567890 <br />
           </Col>
-          <Col md={6} xs={4} xsPush={4}>
+          <Col md={6} xs={4} xsPush={3}>
             <h5>Useful Links</h5>
             <div class="is-divider small"></div>
             <p className="textAlignJustify">

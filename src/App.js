@@ -53,7 +53,7 @@ function App() {
               zIndex: "999",
               position: isSticky ? "fixed" : "absolute",
               marginBottom: "20px",
-              height: "57px",
+              height: "100px",
             }}
           >
             <Header />
